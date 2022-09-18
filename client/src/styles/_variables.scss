@@ -1,0 +1,45 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+
+/* Кольори / Colors */
+$black-clr: #05030e;
+$grey-clr: #8fa2a6;
+$white-clr: #fff;
+$turquoise-clr: #b4f299;
+
+:root {
+    /* Colors */
+    --background-color-primary: #05030e;
+    --background-shadow-primary: #0f3123;
+    --primary-title-color: #fff;
+    --primary-clr-top-menu: #fff;
+    --primary-clr-article-paragraph: #fff;
+    --primary-clr-top-menu-hover: #b4f299;
+    --primary-clr-titles: #b4f299;
+    --primary-clr-paragraph: #8fa2a6;
+    --primary-clr-top-social-link: #8fa2a6;
+    --primary-clr-choose-lang: #8fa2a6;
+
+    /* Paddings */
+    --xxs-padding: 2px;
+    --xs-padding: 3px;
+    --s-padding: 5px;
+    --sm-padding: 7px;
+    --m-padding: 10px;
+
+    /* Margins */
+    --xxs-margin: 3px;
+    --xs-margin: 5px;
+    --s-margin: 7px;
+    --sm-margin: 10px;
+    --m-margin: 12px;
+    --l-margin: 15px;
+
+    /* Border radius */
+    --primary-border-radius: 3px;
+}

@@ -1,0 +1,115 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+.latest-project {
+    width: 100%;
+    cursor: pointer;
+    margin: 0 auto;
+    margin: 7vh 0;
+    position: relative;
+    z-index: 10;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__container:hover > &__description > &__paragraph,
+    &__container:focus > &__description > &__paragraph,
+    &__container:active > &__description > &__paragraph {
+        color: #fff;
+    }
+
+    &__poster {
+        order: 2;
+    }
+
+    &__description {
+        order: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 20px;
+        height: 190px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    &__paragraph {
+        line-height: 1.5;
+        white-space: pre-line;
+    }
+}
+
+@media (min-width: 576px) {
+    .latest-project {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .latest-project {
+        width: 95%;
+        margin: 0 auto 7vh;
+
+        &__container {
+            flex-direction: row;
+        }
+
+        &__poster {
+            width: 50%;
+            order: 1;
+            margin-right: 30px;
+        }
+
+        &__description {
+            width: 50%;
+            order: 2;
+            -webkit-line-clamp: 10;
+            height: 305px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .latest-project {
+        &__poster {
+            width: 450px;
+        }
+
+        &__description {
+            order: 1;
+            -webkit-line-clamp: 14;
+            margin-bottom: 0;
+            height: 420px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .latest-project {
+        margin: 0 auto 9vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    .latest-project {
+        width: 92.5%;
+
+        &__description {
+            height: 414px;
+            -webkit-line-clamp: 13;
+        }
+    }
+}

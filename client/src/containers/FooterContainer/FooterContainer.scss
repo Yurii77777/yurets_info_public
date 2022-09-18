@@ -1,0 +1,151 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Делай хорошо, и только хорошо! А можешь? - Делай лучше!"
+ */
+
+.footer {
+    margin: 105px 0 30px 0;
+
+    &__social-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    &__social-item {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__social-item-border {
+        display: none;
+    }
+    
+    &__social-item:hover > &__social-item-border,
+    &__social-item:focus > &__social-item-border,
+    &__social-item:active > &__social-item-border {
+        display: block;
+        position: absolute;
+        height: 100%;
+    }
+
+    &__social-item:hover > &__social-url > span,
+    &__social-item:focus > &__social-url > span,
+    &__social-item:active > &__social-url > span {
+        background: none;
+        -webkit-text-fill-color: #fff;
+    }
+
+    &__social-url {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__social-icon-img {
+        width: 35px;
+        margin: 15px 0 10px 0;
+    }
+
+    &__social-url > span {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        &__social-list {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &__social-list > li:nth-child(4) &__social-icon-img {
+            margin: 20px 0 10px 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        &__social-list {
+            margin: 0 auto;
+        }
+
+        &__social-item {
+            width: 90px;
+            height: 90px;
+        }
+
+        &__social-url > span {
+            display: block;
+            font-size: .9rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 24px 64px rgba(138, 249, 173, 0.3);
+        }
+
+        &__social-icon-img {
+            margin: 20px 0 10px 0;
+        }
+
+        &__social-list > li:nth-child(3) &__social-icon-img {
+            width: 31px;
+        }
+
+        &__social-list > li:nth-child(4) &__social-icon-img {
+            width: 40px;
+        }
+
+        &__social-list > li:nth-child(5) &__social-icon-img {
+            width: 30px;
+        }
+
+        &__social-list > li:nth-child(6) &__social-icon-img {
+            width: 34px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        &__social-item {
+            width: 100px;
+            height: 100px;
+        }
+
+        &__social-icon-img {
+            width: 45px;
+        }
+
+        &__social-url > span {
+            font-size: 1rem;
+        }
+
+        &__social-list > li:nth-child(3) &__social-icon-img {
+            width: 40px;
+        }
+
+        &__social-list > li:nth-child(4) &__social-icon-img {
+            width: 50px;
+        }
+
+        &__social-list > li:nth-child(5) &__social-icon-img {
+            width: 39px;
+        }
+
+        &__social-list > li:nth-child(6) &__social-icon-img {
+            width: 44px;
+        }
+    }
+}

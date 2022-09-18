@@ -1,0 +1,217 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+
+@import "./_reset.scss";
+@import "./_variables.scss";
+@import "./mixins.scss";
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v18-latin_cyrillic-regular.eot");
+    src: local(""),
+        url("../fonts/montserrat-v18-latin_cyrillic-regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-regular.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-v18-latin_cyrillic-regular.woff")
+            format("woff"),
+        url("../fonts/montserrat-v18-latin_cyrillic-regular.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-regular.svg#Montserrat")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v18-latin_cyrillic-italic.eot");
+    src: local(""),
+        url("../fonts/montserrat-v18-latin_cyrillic-italic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-italic.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-v18-latin_cyrillic-italic.woff") format("woff"),
+        url("../fonts/montserrat-v18-latin_cyrillic-italic.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-italic.svg#Montserrat")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/montserrat-v18-latin_cyrillic-800.eot");
+    src: local(""),
+        url("../fonts/montserrat-v18-latin_cyrillic-800.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800.woff2") format("woff2"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800.woff") format("woff"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800.ttf") format("truetype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800.svg#Montserrat")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 800;
+    src: url("../fonts/montserrat-v18-latin_cyrillic-800italic.eot");
+    src: local(""),
+        url("../fonts/montserrat-v18-latin_cyrillic-800italic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800italic.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800italic.woff")
+            format("woff"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800italic.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-v18-latin_cyrillic-800italic.svg#Montserrat")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.eot");
+    src: local(""),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.woff")
+            format("woff"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-regular.svg#MontserratAlternates")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.eot");
+    src: local(""),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.woff")
+            format("woff"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-700.svg#MontserratAlternates")
+            format("svg");
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.eot");
+    src: local(""),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.woff2")
+            format("woff2"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.woff")
+            format("woff"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.ttf")
+            format("truetype"),
+        url("../fonts/montserrat-alternates-v12-latin_cyrillic-800.svg#MontserratAlternates")
+            format("svg");
+}
+
+body {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    background-color: $black-clr;
+}
+
+.article-primary {
+    @include flex-col-center-center;
+}
+
+.primary-title,
+.secondary-title,
+.tertiary-title {
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.primary-title {
+    font-size: calc(2rem + 1 * (100vw / 1920));
+    color: $turquoise-clr;
+}
+
+.secondary-title {
+    font-size: calc(2rem + 0.5 * (100vw / 1920));
+    text-shadow: 0px 14px 44px rgba(220, 152, 57, 0.6);
+    background: linear-gradient(#caee39, #e99a3d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tertiary-title {
+    font-size: calc(17px + 3 * (100vw / 1920));
+    color: $white-clr;
+}
+
+.primary-paragraph,
+.secondary-paragraph,
+.paragraph-code {
+    font-size: calc(11px + 2 * (100vw / 1280));
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+    white-space: pre-line;
+    margin-bottom: 1vh;
+}
+
+.primary-paragraph {
+    color: var(--primary-clr-paragraph);
+}
+
+.secondary-paragraph {
+    color: $white-clr;
+}
+
+.paragraph-code {
+    background: linear-gradient(
+        135deg,
+        #00ffaa 0%,
+        #4579f5 53.01%,
+        #9c42f5 99.83%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-break: break-all;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .article-primary {
+        width: 95%;
+    }
+}

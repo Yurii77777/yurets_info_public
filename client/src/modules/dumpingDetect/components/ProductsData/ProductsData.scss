@@ -1,0 +1,75 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+
+.module-article {
+    &__products-list.prices {
+        width: 130px;
+    }
+
+    &__products-seller-header {
+        font-size: 1.4rem;
+        color: var(--primary-clr-paragraph);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+
+    &__products-seller-subheader {
+        font-size: 1.1rem;
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        color: #fff;
+        height: 30px;
+    }
+
+    &__products-seller-subheader > span {
+        align-self: center;
+        text-align: center;
+    }
+
+    &__products-item-price {
+        height: 22px;
+        margin-bottom: var(--xxs-margin);
+    }
+
+    &__products-item-price:hover > a,
+    &__products-item-price:focus > a,
+    &__products-item-price:active > a {
+        background-color: #8fa2a6;
+        color: #000;
+        border-radius: 5px;
+    }
+
+    &__products-item-link {
+        font-size: 1.1rem;
+        display: grid;
+        justify-content: flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        height: 100%;
+        color: #fff;
+    }
+
+    &__products-item-link > span {
+        align-self: center;
+        text-align: center;
+    }
+
+    &__products-item-link.no-available {
+        color: var(--primary-clr-paragraph);
+        opacity: 0.5;
+    }
+
+    &__dumping {
+        color: #ff0000db;
+    }
+}

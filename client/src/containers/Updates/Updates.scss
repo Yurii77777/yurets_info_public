@@ -1,0 +1,147 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Делай хорошо, и только хорошо! А можешь? - Делай лучше!"
+ */
+
+.updates {
+    position: relative;
+    padding-bottom: 30vh;
+
+    &__border-img {
+        display: none;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    &__paragraph {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        white-space: pre-line;
+        word-break: break-all;
+        margin-bottom: 3vh;
+        position: relative;
+    }
+
+    &__paragraph > span {
+        display: block;
+        width: 90%;
+    }
+
+    &__item-hyphen {
+        margin-right: 1vh;
+    }
+
+    &__background-img {
+        position: absolute;
+        max-width: 150%;
+        left: -15vh;
+        top: 10vh;
+    }
+}
+
+@media (min-width: 576px) {
+    .updates {
+        padding-bottom: 70vh;
+        width: 95%;
+
+        &__border-img {
+            display: block;
+            position: absolute;
+        }
+
+        &__title {
+            text-align: left;
+            padding: 3vh 0 0 3vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__paragraph {
+            padding-left: 3vh;
+        }
+
+        &__background-img {
+            top: 0;
+            min-width: 150%;
+            left: -25vh;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .updates {
+        padding-bottom: 15vh;
+
+        &__paragraph {
+            padding-left: 3vh;
+            width: 60%;
+        }
+
+        &__background-img {
+            min-width: 80%;
+            max-width: 80%;
+            top: -9vh;
+            left: 35vh;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .updates {
+        padding-bottom: 25vh;
+
+        &__title {
+            padding: 5vh 0 0 9vh;
+        }
+
+        &__paragraph {
+            padding-left: 9vh;
+            width: 50%;
+        }
+
+        &__background-img {
+            max-width: 90%;
+            left: 30vh;
+            top: -17vh;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .updates {
+        padding-bottom: 20vh;
+
+        &__title {
+            padding: 9vh 0 0 9vh;
+            margin-bottom: 9vh;
+        }
+
+        &__paragraph {
+            width: 70%;
+        }
+
+        &__background-img {
+            max-width: 65%;
+            left: 55vh;
+            top: -25vh;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .updates {
+        padding-bottom: 40vh;
+
+        &__background-img {
+            left: 45vh;
+        }
+    }
+}

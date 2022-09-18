@@ -1,0 +1,25 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Делай хорошо, и только хорошо! А можешь? - Делай лучше!"
+ */
+
+.full-article {
+    &__title {
+        margin: 2vh 0 2vh 0;
+        text-align: center;
+    }
+
+    &__paragraph-code {
+        margin-bottom: 1vh;
+        padding-left: 2vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .full-article {
+        width: 80%;
+    }
+}

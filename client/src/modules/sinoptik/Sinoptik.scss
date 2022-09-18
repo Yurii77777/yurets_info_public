@@ -1,0 +1,157 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+
+@import "./styles/errors";
+
+.sinoptik-article {
+    color: #fff;
+    max-width: 435px;
+
+    &__title {
+        margin: 2vh 0;
+    }
+
+    &__top-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__top-info,
+    &__description,
+    &__stack {
+        margin-bottom: 5vh;
+    }
+
+    &__current-weather-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__current-weather-container {
+        margin-bottom: 10vh;
+    }
+
+    &__top-info,
+    &__city-name,
+    &__temp,
+    &__weather-description {
+        position: relative;
+    }
+
+    &__weather-description {
+        text-shadow: 5px 4px 4px #000000;
+    }
+
+    &__weather-icon {
+        position: absolute;
+        opacity: 0.4;
+    }
+
+    &__city-name {
+        font-size: 1.8rem;
+    }
+
+    &__temp {
+        font-size: 7rem;
+        margin: 0.7em 0;
+    }
+
+    &__weather-description {
+        text-align: center;
+        width: 85%;
+    }
+
+    &__description,
+    &__stack {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    &__description-title,
+    &__stack-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--sm-margin);
+    }
+
+    &__description-paragraph {
+        text-align: justify;
+        white-space: break-spaces;
+    }
+
+    &__stack {
+        width: 100%;
+    }
+
+    &__stack-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    &__stack-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        border-radius: 17px;
+        background: linear-gradient(
+            135deg,
+            #00ffaa 0%,
+            #4579f5 53.01%,
+            #9c42f5 99.83%
+        );
+    }
+}
+
+@media (min-width: 768px) {
+    .sinoptik-article {
+        max-width: 95%;
+
+        &__title {
+            margin: 4vh 0;
+        }
+
+        &__top-info {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__current-weather-container {
+            width: 60%;
+        }
+
+        &__weather-icon {
+            width: 40%;
+        }
+
+        &__description,
+        &__stack {
+            width: 80%;
+            font-size: 1.3rem;
+            line-height: 1.3;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .sinoptik-article {
+        &__top-info {
+            width: 95%;
+        }
+
+        &__stack-list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

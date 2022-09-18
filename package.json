@@ -1,0 +1,36 @@
+{
+  "name": "yurets_info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development&& concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurii77777/yurets_info.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.18.0",
+    "mongoose": "^6.3.6",
+    "node-fetch": "^3.2.4",
+    "puppeteer": "^14.2.1",
+    "telegraf": "^4.9.2",
+    "ws": "^8.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12"
+  },
+  "bugs": {
+    "url": "https://github.com/Yurii77777/yurets_info/issues"
+  }
+}

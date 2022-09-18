@@ -1,0 +1,83 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+
+.choose-language {
+    &__list {
+        position: relative;
+        font-size: 1.5rem;
+        color: var(--primary-clr-choose-lang);
+        padding: var(--m-padding);
+        width: 32px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    &__item {
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        padding: var(--xs-padding) var(--s-padding);
+    }
+
+    &__list > li:nth-child(2) {
+        top: 25px;
+    }
+
+    &__list > li:nth-child(3) {
+        top: 50px;
+    }
+
+    &__list.active > li:hover,
+    &__list > li:nth-child(1):hover {
+        color: var(--primary-clr-top-menu-hover);
+    }
+}
+
+@media (min-width: 768px) {
+    .choose-language {
+        &__list {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            left: -8px;
+            top: 120px;
+            font-size: 1.5rem;
+            color: var(--primary-clr-choose-lang);
+            padding: var(--m-padding);
+            width: 32px;
+            height: 25px;
+            cursor: pointer;
+            transform: rotate(-90deg);
+        }
+
+        &__list.active {
+            transform: rotate(0);
+        }
+
+        &__list.active > li:nth-child(2) {
+            top: 2px;
+            left: 34px;
+        }
+
+        &__list.active > li:nth-child(3) {
+            top: 2px;
+            left: 80px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .choose-language {
+        &__list {
+            position: relative;
+            top: 0;
+            left: -40px;
+            transform: rotate(0deg);
+        }
+    }
+}

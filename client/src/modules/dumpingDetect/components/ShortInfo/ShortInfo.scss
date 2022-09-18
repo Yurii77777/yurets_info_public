@@ -1,0 +1,82 @@
+/**
+ * Made by Yurets in UA!
+ * Copyright (c) GPL License <2021-2022> <Yurii Andriiko>
+ * http://yurets.info/
+ * Telegram @Yurets7777 E-mail: yuretshome@gmail.com
+ * "Роби добре, та тільки добре! А можеш? - Роби краще!"
+ */
+.dd-shrot-info {
+    &__content-container {
+        width: 100%;
+    }
+
+    &__title {
+        color: #8fa2a6;
+        border-top: 1px solid #8fa2a6;
+        border-bottom: 1px solid #8fa2a6;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    &__item-header {
+        margin: 10px 0;
+    }
+
+    &__item-header > span {
+        color: #8fa2a6;
+        margin-right: 10px;
+    }
+
+    &__item-header:last-child {
+        margin-right: 0;
+    }
+
+    &__item-link,
+    &__item-title {
+        display: grid;
+        grid-template-columns: 5% 50% 15% 15% 15%;
+        color: #fff;
+        margin-bottom: 3px;
+    }
+
+    &__item-title {
+        color: #8fa2a6;
+        margin-bottom: 10px;
+    }
+
+    &__item-link:hover,
+    &__item-link:focus,
+    &__item-link:active {
+        opacity: 0.6;
+    }
+
+    &__item-link.dumping {
+        color: #ff0000db;
+    }
+
+    &__bottom-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 25px;
+        cursor: pointer;
+    }
+
+    &__bottom-item:hover,
+    &__bottom-item:focus,
+    &__bottom-item:active {
+        opacity: 0.7;
+    }
+
+    &__show-more-icon {
+        height: 10px;
+    }
+}
